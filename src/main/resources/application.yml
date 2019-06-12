@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1/weixinorder?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: 127.0.0.1
+    port: 6379
+#server.context-path配置会报错，原因未知，待解决
+debug: true
+server:
+  servlet:
+    context-path: /sell

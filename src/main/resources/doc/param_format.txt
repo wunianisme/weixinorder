@@ -1,0 +1,3 @@
+IDEA方法自定义注释模板中的$param$参数Expression
+此表达式可以使得多个参数以竖向排列
+groovyScript("def result=''; def params=\"${_1}\".replaceAll('[\\\\[|\\\\]|\\\\s]', '').split(',').toList(); for(i = 0; i < params.size(); i++) {result+=(i==0?'*@param ':' *@param ') + params[i] + ((i < params.size() - 1) ? '\\n' : '')}; return result", methodParameters())
