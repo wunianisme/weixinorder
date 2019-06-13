@@ -58,9 +58,9 @@ create table `order_detail`(
   key `idx_order_id` (`order_id`)
 )comment '订单详情表';
 
+
 -- 有关金额的字段必须用decimal类型
--- 必须保证是mysql5.7及以上版本才能同时设置两个timestamp字段默认
--- current_timestamp
+-- 必须保证是mysql5.7及以上版本才能同时设置两个timestamp字段默认current_timestamp
 
 
 

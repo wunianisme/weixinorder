@@ -42,6 +42,7 @@ public class ProductInfo {
 
     private Date updateTime;
 
+
     @JsonIgnore //一般标记在属性或者方法上，返回的json数据即不包含该属性
     public ProductStatusEnum getProductStatusEnum(){
         return EnumUtil.getByCode(productStatus,ProductStatusEnum.class);
