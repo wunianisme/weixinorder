@@ -38,9 +38,9 @@ public class ProductInfo {
 
     private Integer categoryType;//类目编号
 
-   // private Date createTime;
+    private Date createTime;
 
-    //private Date updateTime;
+    private Date updateTime;
 
     @JsonIgnore //一般标记在属性或者方法上，返回的json数据即不包含该属性
     public ProductStatusEnum getProductStatusEnum(){
